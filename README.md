@@ -40,7 +40,84 @@ SKN 16기 2차 단위프로젝트
 - **가상 데이터 특성 수:** 총 51개 (범주형/수치형 혼합) → 중요 변수만 사용하여 생성성
 ---
 
+
+
 ## 🛠️5. 분석 절차
+
+
+### 프로젝트 구조
+
+
+```
+📦 SKN16-2nd-2Team
+│
+├── 📄 README.md                  # 프로젝트 개요 및 실행 방법
+├── 📄 requirements.txt           # Python 패키지 의존성
+├── 📄 .gitignore                 # Git 제외 파일
+│
+├── 📂 data                       # 데이터 관리 폴더
+│   ├── raw                       # 원본 데이터
+│   │   ├── dropout_survey.csv
+│   │   └── virtual_student_data.csv
+│   ├── processed                 # 전처리된 데이터
+│   │   ├── train.csv
+│   │   └── test.csv
+│   └── external                  # 외부 참고 데이터 (예: 심리 요인 관련 데이터)
+│
+├── 📂 notebooks                  # Jupyter Notebook 폴더
+│   ├── 01_EDA.ipynb              # 데이터 탐색 및 시각화
+│   ├── 02_Preprocessing.ipynb    # 전처리 및 피처 엔지니어링
+│   ├── 03_Modeling.ipynb         # 머신러닝/딥러닝 모델 학습
+│   ├── 04_Evaluation.ipynb       # 모델 평가 및 비교
+│   └── 05_Streamlit_Demo.ipynb   # Streamlit UI 테스트
+│
+├── 📂 src                        # 프로젝트 핵심 소스코드
+│   ├── init.py
+│   ├── data_preprocessing.py     # 데이터 전처리 모듈
+│   ├── feature_selection.py      # 변수 선택 및 중요도 분석
+│   ├── model_training.py         # 모델 학습 및 저장
+│   ├── model_evaluation.py       # 모델 성능 평가
+│   ├── utils.py                  # 공통 유틸리티 함수
+│   └── inference.py              # 모델 로드 및 예측 모듈
+│
+├── 📂 models                     # 학습된 모델 저장
+│   ├── gradient_boosting.pkl
+│   ├── random_forest.pkl
+│   └── logistic_regression.pkl
+│
+├── 📂 streamlit_app              # Streamlit 배포 관련 폴더
+│   ├── app.py                    # 메인 Streamlit 실행 파일
+│   ├── components                # UI 컴포넌트
+│   │   ├── student_list.py
+│   │   ├── student_detail.py
+│   │   └── riskvisualization.py
+│   ├── pages                     # Streamlit 멀티페이지 관리
+│   │   ├── 1학생별위험도분석.py
+│   │   ├── 2학생데이터관리.py
+│   │   └── 3모델성능확인.py
+│   └── assets                    # 이미지 및 아이콘 리소스
+│       ├── logo.png
+│       └── style.css
+│
+├── 📂 reports                    # 분석 보고서 및 문서
+│   ├── figures                   # 분석 시각화 결과
+│   │   ├── correlation_heatmap.png
+│   │   ├── feature_importance.png
+│   │   └── model_comparison.png
+│   ├── presentation              # 발표 자료
+│   │   └── SKN16-2nd-2Team_PPT.pptx
+│   └── final_report.md           # 최종 프로젝트 보고서
+│
+└── 📂 tests                      # 테스트 코드
+    ├── test_preprocessing.py
+    ├── test_model_training.py
+    └── test_inference.py
+    
+```
+    
+
+    
+
 
 ### 🔧기술 스택
 <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white"/>  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
@@ -87,29 +164,42 @@ SKN 16기 2차 단위프로젝트
 
 ### 💻5.3 Streamlit 구현
 
+
+
+
 - 메인 화면: 학생별 중퇴 가능성을 위험도로 나누어 시각화
 <img width="1418" height="405" alt="11" src="https://github.com/user-attachments/assets/48e35900-adb7-4538-8248-c5b982cd407b" />
 <img width="1413" height="797" alt="22" src="https://github.com/user-attachments/assets/e11c70f8-d520-4471-b23d-d5e4b75b173c" />
 
 
 
+
 - 학생 리스트: 학생 리스트, 위험도별 학생 확인 가능
+  
 ![111](https://github.com/user-attachments/assets/a4625248-482e-4452-ba71-0e6cf453f703)
 
 - 학생 클릭하여 개별 예측 화면으로 이동 가능
-![학생리스트](https://github.com/user-attachments/assets/faaa794d-8721-4efa-8e38-47f8a1dbd53b)
+  
+![5](https://github.com/user-attachments/assets/63cf6722-941e-48e9-b145-9a4abb14d5e6)
+
+
+
 
 
 - 학생 데이터 관리:
+![심리상태변화](https://github.com/user-attachments/assets/091a313e-88bc-4850-889c-b10be174ad3e)
+
+
+<img width="983" height="772" alt="14" src="https://github.com/user-attachments/assets/cbc35e15-74eb-45b8-9096-da5824d89910" />
 
 
 
-![학생심리상태변화](https://github.com/user-attachments/assets/cbcc6fd8-06c4-479f-89a7-b85b19e22d71)
+-최종 streamlit 구현 화면
 
-
+![project2_2](https://github.com/user-attachments/assets/97028d17-f97a-46ba-9c8c-b7cae8056cfa)
 
  
-<img width="896" height="767" alt="스크린샷 2025-08-06 090051" src="https://github.com/user-attachments/assets/a5ddfb1e-2406-41fd-9b09-1b1dc56b85fd" />
+
 
 ---
 
