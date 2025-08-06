@@ -42,6 +42,16 @@ SKN 16기 2차 단위프로젝트
 
 ## 🛠️5. 분석 절차
 
+### 🔧기술 스택
+<img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white"/>  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>  <img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white"/>  <img src="https://img.shields.io/badge/Seaborn-9AABA6?style=for-the-badge&logo=seaborn&logoColor=white"/>  <img src="https://img.shields.io/badge/LogisticRegression-7C4DFF?style=for-the-badge"/>  <img src="https://img.shields.io/badge/RandomForest-43A047?style=for-the-badge"/>  <img src="https://img.shields.io/badge/GradientBoost-0460EB?style=for-the-badge"/>  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white"/>  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=black"/>    <img src="https://img.shields.io/badge/st--aggrid-2C8EBB?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/pickle-000000?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/warnings-FD6C24?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/os-232F3E?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/time-0E7490?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/platform-3D4451?style=for-the-badge"/>
+
+
 ### 5.1 EDA 및 전처리
 - **데이터 구조 확인:** 변수명, 데이터 타입, 결측치 여부 점검  
 - **분석 대상 데이터 선정:** 학습 등급이 4~7 구간에 해당하는 학생만 필터링  
@@ -81,17 +91,24 @@ SKN 16기 2차 단위프로젝트
 <img width="1418" height="405" alt="11" src="https://github.com/user-attachments/assets/48e35900-adb7-4538-8248-c5b982cd407b" />
 <img width="1413" height="797" alt="22" src="https://github.com/user-attachments/assets/e11c70f8-d520-4471-b23d-d5e4b75b173c" />
 
+
+
 - 학생 리스트: 학생 리스트, 위험도별 학생 확인 가능
 ![111](https://github.com/user-attachments/assets/a4625248-482e-4452-ba71-0e6cf453f703)
 
-학생 클릭하여 개별 예측 화면으로 이동 가능
+- 학생 클릭하여 개별 예측 화면으로 이동 가능
+![학생리스트](https://github.com/user-attachments/assets/faaa794d-8721-4efa-8e38-47f8a1dbd53b)
 
 
--학생 개별 예측: 
+- 학생 데이터 관리:
+
+
+
+![학생심리상태변화](https://github.com/user-attachments/assets/cbcc6fd8-06c4-479f-89a7-b85b19e22d71)
+
 
 
  
-- 학생 데이터 관리: 중퇴 위험군 학생을 대시보드에서 확인 가능   
 <img width="896" height="767" alt="스크린샷 2025-08-06 090051" src="https://github.com/user-attachments/assets/a5ddfb1e-2406-41fd-9b09-1b1dc56b85fd" />
 
 ---
