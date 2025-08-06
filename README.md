@@ -194,7 +194,7 @@ SKN 16기 2차 단위프로젝트
 
 
 
--최종 streamlit 구현 화면
+-전체 streamlit 구현 화면
 
 ![project2_2](https://github.com/user-attachments/assets/97028d17-f97a-46ba-9c8c-b7cae8056cfa)
 
